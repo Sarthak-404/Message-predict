@@ -1524,7 +1524,7 @@ if st.button("Generate Text"):
     if input_text:
         text = input_text
 
-        for _ in range(10):  # Generate 10 words
+        for _ in range(4):  # Generate 10 words
             token_text = tokenizer.texts_to_sequences([text])[0]
             padded_token_text = pad_sequences([token_text], maxlen=max_sequence_len, padding='pre')
             
